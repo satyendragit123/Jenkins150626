@@ -1,0 +1,36 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2026-06-16T04:00:25.510Z  INFO 16206 --- [           main] c.e.s.SpringbootCicdApplication          : Starting SpringbootCicdApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 16206 (/root/springboot-cicd/target/springboot-cicd-0.0.1-SNAPSHOT.jar started by root in /root/springboot-cicd)
+2026-06-16T04:00:25.520Z  INFO 16206 --- [           main] c.e.s.SpringbootCicdApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T04:00:27.273Z  INFO 16206 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-06-16T04:00:27.301Z  INFO 16206 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T04:00:27.302Z  INFO 16206 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-06-16T04:00:27.349Z  INFO 16206 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-16T04:00:27.350Z  INFO 16206 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2026-06-16T04:00:27.983Z  WARN 16206 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-16T04:00:28.011Z  INFO 16206 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-16T04:00:28.037Z ERROR 16206 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
