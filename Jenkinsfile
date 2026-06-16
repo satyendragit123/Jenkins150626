@@ -1,3 +1,8 @@
+environment {
+    JAVA_HOME = "/usr/lib/jvm/java-21-openjdk-amd64"
+    PATH = "${JAVA_HOME}/bin:${env.PATH}"
+    DOCKER_IMAGE = "satyendragit123/springboot-app:v1"
+}
 stage('Build') {
     steps {
         sh '''
